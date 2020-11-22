@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Moto_Safe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFb-UL-saj" userLabel="Top Banner">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moto-Safe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3o-n1-bAu">
+                                        <rect key="frame" x="76" y="30" width="262" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="NMo-hG-LmF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="50"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Safe Color Code"/>
+                                <constraints>
+                                    <constraint firstItem="w3o-n1-bAu" firstAttribute="centerX" secondItem="lFb-UL-saj" secondAttribute="centerX" id="15c-wP-t7j"/>
+                                    <constraint firstAttribute="height" constant="100" id="HJ9-iI-XNU"/>
+                                    <constraint firstItem="w3o-n1-bAu" firstAttribute="centerY" secondItem="lFb-UL-saj" secondAttribute="centerY" constant="10" id="aFq-j5-Yi5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wue-FI-tFV" userLabel="Ride Score Banner">
+                                <rect key="frame" x="16" y="193" width="382" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Safe To Ride!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C40-Ft-iSm">
+                                        <rect key="frame" x="8" y="44" width="366" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="wQB-1x-dRU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="35"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Safe Color Code"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="857-CV-osd"/>
+                                    <constraint firstItem="C40-Ft-iSm" firstAttribute="centerX" secondItem="Wue-FI-tFV" secondAttribute="centerX" id="JOD-Ve-wf8"/>
+                                    <constraint firstItem="C40-Ft-iSm" firstAttribute="centerY" secondItem="Wue-FI-tFV" secondAttribute="centerY" id="YLr-KG-WMt"/>
+                                    <constraint firstItem="C40-Ft-iSm" firstAttribute="leading" secondItem="Wue-FI-tFV" secondAttribute="leadingMargin" id="ZEx-vy-Svv"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="C40-Ft-iSm" secondAttribute="bottom" constant="36" id="bDn-Ut-uJB"/>
+                                    <constraint firstItem="C40-Ft-iSm" firstAttribute="trailing" secondItem="Wue-FI-tFV" secondAttribute="trailingMargin" id="noj-F0-V2C"/>
+                                    <constraint firstItem="C40-Ft-iSm" firstAttribute="top" secondItem="Wue-FI-tFV" secondAttribute="topMargin" constant="36" id="wSS-VK-t5G"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAd-k5-KsJ" userLabel="Details Header">
+                                <rect key="frame" x="16" y="329" width="382" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Blank]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffy-Jg-DZx">
+                                        <rect key="frame" x="155" y="2.5" width="72" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="En4-TY-l0M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ffy-Jg-DZx" firstAttribute="centerX" secondItem="NAd-k5-KsJ" secondAttribute="centerX" id="TIO-3M-Gvi"/>
+                                    <constraint firstAttribute="height" constant="30" id="kaH-A8-nL0"/>
+                                    <constraint firstItem="Ffy-Jg-DZx" firstAttribute="centerY" secondItem="NAd-k5-KsJ" secondAttribute="centerY" id="kfu-YI-3YS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwx-YQ-2gh" userLabel="Weather Banner">
+                                <rect key="frame" x="0.0" y="359" width="414" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weather:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb7-IS-Uf0">
+                                        <rect key="frame" x="8" y="17" width="170" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
+                                        <color key="textColor" name="Safe Color Code"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j06-fY-a2K">
+                                        <rect key="frame" x="259" y="17" width="108" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="2FF-3z-fx5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Word Table Color Set"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="j06-fY-a2K" secondAttribute="trailing" id="0M4-X3-eme"/>
+                                    <constraint firstItem="j06-fY-a2K" firstAttribute="centerY" secondItem="Cwx-YQ-2gh" secondAttribute="centerY" constant="3" id="QZ7-ft-gw0"/>
+                                    <constraint firstAttribute="height" constant="70" id="XCq-yg-KCj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42R-3v-NAk" userLabel="Chance of Rain Banner">
+                                <rect key="frame" x="0.0" y="434" width="414" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chance of Rain:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjn-e5-1th">
+                                        <rect key="frame" x="8" y="17" width="274" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
+                                        <color key="textColor" name="Safe Color Code"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrI-Ms-V9b">
+                                        <rect key="frame" x="288" y="17" width="79" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="sUu-Fd-kXu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Word Table Color Set"/>
+                                <constraints>
+                                    <constraint firstItem="HrI-Ms-V9b" firstAttribute="trailing" secondItem="42R-3v-NAk" secondAttribute="trailingMargin" id="0cR-GZ-85i"/>
+                                    <constraint firstItem="HrI-Ms-V9b" firstAttribute="centerY" secondItem="42R-3v-NAk" secondAttribute="centerY" constant="3" id="Ex5-Ds-XqK"/>
+                                    <constraint firstAttribute="height" constant="70" id="nEl-sJ-Dxx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWn-ao-jII" userLabel="Temp Banner">
+                                <rect key="frame" x="0.0" y="509" width="414" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperature:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fl6-27-0lW">
+                                        <rect key="frame" x="8" y="17" width="238" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
+                                        <color key="textColor" name="Safe Color Code"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="°F" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jl-pa-8wd">
+                                        <rect key="frame" x="273" y="17" width="94" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="WQ7-c0-gGq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Word Table Color Set"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="72Z-5S-emr"/>
+                                    <constraint firstItem="7jl-pa-8wd" firstAttribute="trailing" secondItem="wWn-ao-jII" secondAttribute="trailingMargin" id="Dwh-VW-Pwc"/>
+                                    <constraint firstItem="7jl-pa-8wd" firstAttribute="centerY" secondItem="wWn-ao-jII" secondAttribute="centerY" constant="3" id="cZz-aH-IVs"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1m-cl-fKA" userLabel="Time Banner">
+                                <rect key="frame" x="0.0" y="584" width="414" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ql-fu-uDe">
+                                        <rect key="frame" x="8" y="17" width="114" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
+                                        <color key="textColor" name="Safe Color Code"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YX9-Ed-P4x">
+                                        <rect key="frame" x="231" y="17" width="136" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="yYf-7f-rDA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Word Table Color Set"/>
+                                <constraints>
+                                    <constraint firstItem="YX9-Ed-P4x" firstAttribute="trailing" secondItem="c1m-cl-fKA" secondAttribute="trailingMargin" id="5hJ-YT-mp4"/>
+                                    <constraint firstItem="YX9-Ed-P4x" firstAttribute="centerY" secondItem="c1m-cl-fKA" secondAttribute="centerY" constant="3" id="YIU-ts-sR4"/>
+                                    <constraint firstAttribute="height" constant="70" id="fz7-Ug-aY6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFR-lj-l52" userLabel="Wind Speed">
+                                <rect key="frame" x="0.0" y="659" width="414" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvx-Bu-FHV">
+                                        <rect key="frame" x="8" y="17" width="228" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text" base64-UTF8="YES">
+CFdpbmQgU3BlZWQ6A
+</string>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
+                                        <color key="textColor" name="Safe Color Code"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="mph" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNT-R0-c5Q">
+                                        <rect key="frame" x="238.66666666666666" y="17" width="128.33333333333331" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="bKG-u1-5FC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Word Table Color Set"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0j1-pZ-5id"/>
+                                    <constraint firstItem="dNT-R0-c5Q" firstAttribute="trailing" secondItem="bFR-lj-l52" secondAttribute="trailingMargin" id="bTp-v1-do5"/>
+                                    <constraint firstItem="dNT-R0-c5Q" firstAttribute="centerY" secondItem="bFR-lj-l52" secondAttribute="centerY" constant="3" id="yN5-pk-cj1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="McM-LH-g2G" userLabel="Credit Banner">
+                                <rect key="frame" x="16" y="734" width="382" height="33"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made By Gerardo Barcenas Jr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ay3-oR-W3k">
+                                        <rect key="frame" x="75" y="6" width="232" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Safe Color Code"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="9Vq-X4-atg"/>
+                                    <constraint firstItem="ay3-oR-W3k" firstAttribute="centerX" secondItem="McM-LH-g2G" secondAttribute="centerX" id="Mfx-ZB-A3e"/>
+                                    <constraint firstItem="ay3-oR-W3k" firstAttribute="centerY" secondItem="McM-LH-g2G" secondAttribute="centerY" id="rwd-6y-ho4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-gk-oda">
+                                <rect key="frame" x="16" y="151.5" width="342" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="g7O-fL-y2r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8Q-zg-uM8" userLabel="Search Button">
+                                <rect key="frame" x="358" y="149" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="KRK-lE-R2g"/>
+                                    <constraint firstAttribute="height" constant="40" id="qVJ-Da-6Op"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="re9-ld-2BK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="uc4-6L-v8Q"/>
+                                </constraints>
+                                <state key="normal" image="magnifyingglass.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HZJ-8u-6UP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NAd-k5-KsJ" firstAttribute="top" secondItem="Wue-FI-tFV" secondAttribute="bottom" constant="8" id="1YR-vw-ka9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p8Q-zg-uM8" secondAttribute="trailing" constant="16" id="4WS-Fy-kdm"/>
+                            <constraint firstItem="hyv-gk-oda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4jv-Q3-wge"/>
+                            <constraint firstItem="Cwx-YQ-2gh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="689-7o-xai"/>
+                            <constraint firstItem="p8Q-zg-uM8" firstAttribute="top" secondItem="lFb-UL-saj" secondAttribute="bottom" constant="5" id="7aa-hy-kXz"/>
+                            <constraint firstItem="Cwx-YQ-2gh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7t9-gi-0II"/>
+                            <constraint firstItem="Wue-FI-tFV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DMh-Qw-KtM"/>
+                            <constraint firstItem="p8Q-zg-uM8" firstAttribute="leading" secondItem="hyv-gk-oda" secondAttribute="trailing" id="Ey0-lD-jQK"/>
+                            <constraint firstItem="c1m-cl-fKA" firstAttribute="top" secondItem="wWn-ao-jII" secondAttribute="bottom" constant="5" id="G2Z-NQ-Vry"/>
+                            <constraint firstItem="hyv-gk-oda" firstAttribute="top" secondItem="lFb-UL-saj" secondAttribute="bottom" constant="7.5" id="I83-eC-RAp"/>
+                            <constraint firstItem="wWn-ao-jII" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jbc-yP-aTT"/>
+                            <constraint firstItem="McM-LH-g2G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LFa-06-buF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NAd-k5-KsJ" secondAttribute="trailing" constant="16" id="LqN-Lf-Nzw"/>
+                            <constraint firstItem="Cwx-YQ-2gh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MLC-eT-zeN"/>
+                            <constraint firstItem="c1m-cl-fKA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="T8g-jO-j0X"/>
+                            <constraint firstItem="lFb-UL-saj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tex-Su-MHX"/>
+                            <constraint firstItem="McM-LH-g2G" firstAttribute="top" secondItem="bFR-lj-l52" secondAttribute="bottom" constant="5" id="UGl-Lp-OhW"/>
+                            <constraint firstItem="Cwx-YQ-2gh" firstAttribute="top" secondItem="NAd-k5-KsJ" secondAttribute="bottom" id="WIj-GP-veq"/>
+                            <constraint firstItem="NAd-k5-KsJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YXg-Fm-0sX"/>
+                            <constraint firstItem="bFR-lj-l52" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ytz-P3-axP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wue-FI-tFV" secondAttribute="trailing" constant="16" id="aak-1Y-e7G"/>
+                            <constraint firstItem="42R-3v-NAk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e2a-QL-cnA"/>
+                            <constraint firstItem="42R-3v-NAk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fYW-CU-P5e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="McM-LH-g2G" secondAttribute="trailing" constant="16" id="hc8-wz-jcC"/>
+                            <constraint firstItem="bFR-lj-l52" firstAttribute="top" secondItem="c1m-cl-fKA" secondAttribute="bottom" constant="5" id="hxV-Fe-9jx"/>
+                            <constraint firstItem="McM-LH-g2G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j3I-dy-s21"/>
+                            <constraint firstItem="NAd-k5-KsJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jJ6-UZ-KPh"/>
+                            <constraint firstItem="lFb-UL-saj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kKL-bu-dOn"/>
+                            <constraint firstItem="wWn-ao-jII" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lxa-tO-0bd"/>
+                            <constraint firstItem="Wue-FI-tFV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nCl-2c-v1b"/>
+                            <constraint firstItem="bFR-lj-l52" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q2R-V3-bnO"/>
+                            <constraint firstItem="42R-3v-NAk" firstAttribute="top" secondItem="Cwx-YQ-2gh" secondAttribute="bottom" constant="5" id="q7p-7w-b06"/>
+                            <constraint firstItem="wWn-ao-jII" firstAttribute="top" secondItem="42R-3v-NAk" secondAttribute="bottom" constant="5" id="st4-6n-1Zt"/>
+                            <constraint firstItem="Wue-FI-tFV" firstAttribute="top" secondItem="hyv-gk-oda" secondAttribute="bottom" constant="7.5" id="t0K-ur-lqk"/>
+                            <constraint firstItem="lFb-UL-saj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tfe-TA-MKd"/>
+                            <constraint firstItem="c1m-cl-fKA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wOg-dc-GXT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityName" destination="Ffy-Jg-DZx" id="eTi-RW-eLI"/>
+                        <outlet property="creditBanner" destination="McM-LH-g2G" id="1kf-Xg-0dc"/>
+                        <outlet property="rainLabel" destination="zjn-e5-1th" id="7qi-c6-iHI"/>
+                        <outlet property="rainResult" destination="HrI-Ms-V9b" id="LWS-yx-cDl"/>
+                        <outlet property="rideScoreBanner" destination="Wue-FI-tFV" id="pEl-UY-LCU"/>
+                        <outlet property="rideScoreResult" destination="C40-Ft-iSm" id="rMg-Ud-QLR"/>
+                        <outlet property="searchTextField" destination="hyv-gk-oda" id="8RN-y9-IYD"/>
+                        <outlet property="tempLabel" destination="Fl6-27-0lW" id="50Q-nb-K6r"/>
+                        <outlet property="tempResult" destination="7jl-pa-8wd" id="S8d-zX-CHf"/>
+                        <outlet property="timeLabel" destination="0ql-fu-uDe" id="eY8-r5-rid"/>
+                        <outlet property="timeResult" destination="YX9-Ed-P4x" id="lxd-jv-z50"/>
+                        <outlet property="topBanner" destination="lFb-UL-saj" id="wUx-9u-oTm"/>
+                        <outlet property="weatherLabel" destination="jb7-IS-Uf0" id="a9N-JZ-nZl"/>
+                        <outlet property="weatherResult" destination="j06-fY-a2K" id="Ehw-LE-nlE"/>
+                        <outlet property="windLabel" destination="Gvx-Bu-FHV" id="Lxb-b7-JJE"/>
+                        <outlet property="windResult" destination="dNT-R0-c5Q" id="Xlo-IS-CEh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2521" y="-1204"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="Safe Color Code">
+            <color red="0.49399998784065247" green="0.85100001096725464" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Word Table Color Set">
+            <color red="0.92900002002716064" green="0.94099998474121094" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
