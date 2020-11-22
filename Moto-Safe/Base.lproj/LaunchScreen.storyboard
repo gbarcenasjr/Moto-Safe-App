@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,13 +12,22 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moto-Safe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbZ-7j-k5F">
-                                <rect key="frame" x="128.33333333333331" y="343" width="157.33333333333331" height="50"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Moto-Safe Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fGH-sM-Uke">
+                                <rect key="frame" x="132" y="343" width="150" height="150"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Afd-ID-TWu"/>
+                                    <constraint firstAttribute="height" constant="150" id="IAI-jB-nUk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Moto-Safe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbZ-7j-k5F">
+                                <rect key="frame" x="122" y="463" width="170" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FhL-cK-thn"/>
                                     <constraint firstAttribute="height" constant="50" id="IK4-dM-NI5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="157.33000000000001" id="L8p-Vz-2Qi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="30"/>
                                 <nil key="highlightedColor"/>
@@ -26,8 +35,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="qbZ-7j-k5F" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="h29-b0-qXk"/>
-                            <constraint firstItem="qbZ-7j-k5F" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="irY-xq-bBy"/>
+                            <constraint firstItem="fGH-sM-Uke" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="H8t-kB-lCo"/>
+                            <constraint firstItem="qbZ-7j-k5F" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="40" id="cZa-bW-4vb"/>
+                            <constraint firstItem="fGH-sM-Uke" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-30" id="dkB-41-44i"/>
+                            <constraint firstItem="qbZ-7j-k5F" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nUZ-MQ-Skd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,4 +48,7 @@
             <point key="canvasLocation" x="50.724637681159422" y="374.18478260869568"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Moto-Safe Logo" width="341" height="341"/>
+    </resources>
 </document>

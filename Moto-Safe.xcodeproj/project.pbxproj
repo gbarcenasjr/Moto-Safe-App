@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		0D8BB3272569C7E40043B5C9 /* WeatherReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherReport.swift; sourceTree = "<group>"; };
 		0D8BB3292569D9FD0043B5C9 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
-		0D95151D2564650900AE2C97 /* Moto-Safe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moto-Safe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D95151D2564650900AE2C97 /* Moto-Safe - Duplicate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moto-Safe - Duplicate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9515202564650900AE2C97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D9515222564650900AE2C97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0D9515242564650900AE2C97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		0D95151E2564650900AE2C97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D95151D2564650900AE2C97 /* Moto-Safe.app */,
+				0D95151D2564650900AE2C97 /* Moto-Safe - Duplicate.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +98,7 @@
 			);
 			name = "Moto-Safe";
 			productName = "Moto-Safe";
-			productReference = 0D95151D2564650900AE2C97 /* Moto-Safe.app */;
+			productReference = 0D95151D2564650900AE2C97 /* Moto-Safe - Duplicate.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -307,7 +307,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerardobarcenasjr.Moto-Safe";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Moto-Safe - Duplicate";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,7 +325,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerardobarcenasjr.Moto-Safe";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Moto-Safe - Duplicate";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
