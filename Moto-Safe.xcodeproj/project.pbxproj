@@ -44,8 +44,14 @@
 		0D8BB3262569C7A10043B5C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0D9515202564650900AE2C97 /* AppDelegate.swift */,
+				0D9515222564650900AE2C97 /* SceneDelegate.swift */,
+				0D9515242564650900AE2C97 /* ViewController.swift */,
+				0D95152E2564650A00AE2C97 /* Info.plist */,
 				0D8BB3272569C7E40043B5C9 /* WeatherReport.swift */,
 				0D8BB3292569D9FD0043B5C9 /* WeatherData.swift */,
+				0D95152B2564650A00AE2C97 /* LaunchScreen.storyboard */,
+				0D9515262564650900AE2C97 /* Main.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -69,14 +75,8 @@
 		0D95151F2564650900AE2C97 /* Moto-Safe */ = {
 			isa = PBXGroup;
 			children = (
-				0D9515202564650900AE2C97 /* AppDelegate.swift */,
-				0D9515222564650900AE2C97 /* SceneDelegate.swift */,
-				0D9515242564650900AE2C97 /* ViewController.swift */,
 				0D8BB3262569C7A10043B5C9 /* Controller */,
-				0D9515262564650900AE2C97 /* Main.storyboard */,
 				0D9515292564650A00AE2C97 /* Assets.xcassets */,
-				0D95152B2564650A00AE2C97 /* LaunchScreen.storyboard */,
-				0D95152E2564650A00AE2C97 /* Info.plist */,
 			);
 			path = "Moto-Safe";
 			sourceTree = "<group>";
