@@ -61,12 +61,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {  //Empties Text Field after entering a City
+    func textFieldDidEndEditing(_ textField: UITextField) {  //Activates after User Input
         
         cityName.text = "\(searchTextField.text!)"
         if let city = searchTextField.text{
             weatherManager.fetchWeather(cityName: city)
-            
         }
         
         searchTextField.text = ""
@@ -111,7 +110,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         
         //CHANCE OF RAIN
-        if  (usefulValues.weValue >= 200 && usefulValues.weValue <= 232) || (usefulValues.weValue >= 801 && usefulValues.weValue <= 804) || (usefulValues.weValue >= 600 && usefulValues.weValue <= 622){
+        if  (usefulValues.weValue >= 200 && usefulValues.weValue <= 232) || (usefulValues.weValue >= 600 && usefulValues.weValue <= 622){
             rainResult.text = "High"
             rainScore = 50
             rainLabel.textColor = UIColor(named: "Risky Color Code")
@@ -141,17 +140,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
         let beginingOfSentence = period.firstIndex(of: " ")!
         let periodTime = period[beginingOfSentence...endOfSentence2]
         
-        if  ((String(hourTime) == "11:" || String(hourTime) == "12:") && String(periodTime) == "PM")  || (String(hourTime) == "1:" || String(hourTime) == "2:" || String(hourTime) == "3:" || String(hourTime) == "4:" || String(hourTime) == "5:" || String(hourTime) == "6:" || String(hourTime) == "7:") && String(periodTime) == "AM" {
+        if  (String(hourTime) == "11:"  && String(periodTime) == " PM")  || (String(hourTime) == "12:" || String(hourTime) == "1:" || String(hourTime) == "2:" || String(hourTime) == "3:" || String(hourTime) == "4:" || String(hourTime) == "5:" || String(hourTime) == "6:" || String(hourTime) == "7:") && String(periodTime) == " AM" {
             
             timeLabel.textColor = UIColor(named: "Risky Color Code")
             timeScore = 75
             
-        } else if ((String(hourTime) == "8:" || String(hourTime) == "9:" || String(hourTime) == "10:" || String(hourTime) == "11:") && String(periodTime) == "AM") || ((String(hourTime) == "12:" || String(hourTime) == "1:" || String(hourTime) == "2:") && String(periodTime) == "PM") {
+        } else if ((String(hourTime) == "8:" || String(hourTime) == "9:" || String(hourTime) == "10:" || String(hourTime) == "11:") && String(periodTime) == " AM") || ((String(hourTime) == "12:" || String(hourTime) == "1:" || String(hourTime) == "2:") && String(periodTime) == " PM") {
             
             timeLabel.textColor = UIColor(named: "Safe Color Code")
             timeScore = 90
             
-        }else if ((String(hourTime) == "3:" || String(hourTime) == "4:" || String(hourTime) == "5:" || String(hourTime) == "6:") && String(periodTime) == "PM") {
+        }else if ((String(hourTime) == "3:" || String(hourTime) == "4:" || String(hourTime) == "5:" || String(hourTime) == "6:") && String(periodTime) == " PM") {
             timeLabel.textColor = UIColor(named: "Uncomfortable Color Code")
             timeScore = 85
         } else {

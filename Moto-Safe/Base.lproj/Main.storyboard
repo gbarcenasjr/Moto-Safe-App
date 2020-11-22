@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -29,7 +29,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" name="Safe Color Code"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="w3o-n1-bAu" firstAttribute="centerX" secondItem="lFb-UL-saj" secondAttribute="centerX" id="15c-wP-t7j"/>
                                     <constraint firstAttribute="height" constant="100" id="HJ9-iI-XNU"/>
@@ -39,8 +39,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wue-FI-tFV" userLabel="Ride Score Banner">
                                 <rect key="frame" x="16" y="193" width="382" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Safe To Ride!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C40-Ft-iSm">
-                                        <rect key="frame" x="8" y="44" width="366" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Blank]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C40-Ft-iSm">
+                                        <rect key="frame" x="8" y="49" width="366" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="wQB-1x-dRU"/>
                                         </constraints>
@@ -49,15 +49,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" name="Safe Color Code"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="857-CV-osd"/>
                                     <constraint firstItem="C40-Ft-iSm" firstAttribute="centerX" secondItem="Wue-FI-tFV" secondAttribute="centerX" id="JOD-Ve-wf8"/>
-                                    <constraint firstItem="C40-Ft-iSm" firstAttribute="centerY" secondItem="Wue-FI-tFV" secondAttribute="centerY" id="YLr-KG-WMt"/>
+                                    <constraint firstItem="C40-Ft-iSm" firstAttribute="centerY" secondItem="Wue-FI-tFV" secondAttribute="centerY" constant="5" id="YLr-KG-WMt"/>
                                     <constraint firstItem="C40-Ft-iSm" firstAttribute="leading" secondItem="Wue-FI-tFV" secondAttribute="leadingMargin" id="ZEx-vy-Svv"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="C40-Ft-iSm" secondAttribute="bottom" constant="36" id="bDn-Ut-uJB"/>
                                     <constraint firstItem="C40-Ft-iSm" firstAttribute="trailing" secondItem="Wue-FI-tFV" secondAttribute="trailingMargin" id="noj-F0-V2C"/>
-                                    <constraint firstItem="C40-Ft-iSm" firstAttribute="top" secondItem="Wue-FI-tFV" secondAttribute="topMargin" constant="36" id="wSS-VK-t5G"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -91,7 +89,6 @@
                                         <rect key="frame" x="8" y="17" width="170" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
-                                        <color key="textColor" name="Safe Color Code"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j06-fY-a2K">
@@ -117,7 +114,6 @@
                                         <rect key="frame" x="8" y="17" width="274" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
-                                        <color key="textColor" name="Safe Color Code"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrI-Ms-V9b">
@@ -143,7 +139,6 @@
                                         <rect key="frame" x="8" y="17" width="238" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
-                                        <color key="textColor" name="Safe Color Code"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="°F" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jl-pa-8wd">
@@ -169,7 +164,6 @@
                                         <rect key="frame" x="8" y="17" width="114" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
-                                        <color key="textColor" name="Safe Color Code"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YX9-Ed-P4x">
@@ -198,7 +192,6 @@
 CFdpbmQgU3BlZWQ6A
 </string>
                                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
-                                        <color key="textColor" name="Safe Color Code"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="mph" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNT-R0-c5Q">
@@ -227,7 +220,7 @@ CFdpbmQgU3BlZWQ6A
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" name="Safe Color Code"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="9Vq-X4-atg"/>
                                     <constraint firstItem="ay3-oR-W3k" firstAttribute="centerX" secondItem="McM-LH-g2G" secondAttribute="centerX" id="Mfx-ZB-A3e"/>
@@ -239,8 +232,9 @@ CFdpbmQgU3BlZWQ6A
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-gk-oda">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City Name Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-gk-oda">
                                 <rect key="frame" x="16" y="151.5" width="342" height="34"/>
+                                <color key="backgroundColor" name="Word Table Color Set"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="g7O-fL-y2r"/>
                                 </constraints>
@@ -328,9 +322,6 @@ CFdpbmQgU3BlZWQ6A
     </scenes>
     <resources>
         <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
-        <namedColor name="Safe Color Code">
-            <color red="0.49399998784065247" green="0.85100001096725464" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Word Table Color Set">
             <color red="0.92900002002716064" green="0.94099998474121094" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
