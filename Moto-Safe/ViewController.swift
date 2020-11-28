@@ -84,7 +84,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         //TEMP
         tempResult.text = "\(usefulValues.tValue)°F"
-        tempScore = 100 - pow(abs(75.0 - Double(usefulValues.tValue)),1.1)
+        tempScore = 100 - pow(abs(75.0 - Double(usefulValues.tValue)),0.95)
         if tempScore >= 90 {
             tempLabel.textColor = UIColor(named: "Safe Color Code")
         } else if tempScore >= 80 {
