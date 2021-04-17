@@ -15,6 +15,8 @@
 		0D9515282564650900AE2C97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9515262564650900AE2C97 /* Main.storyboard */; };
 		0D95152A2564650A00AE2C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9515292564650A00AE2C97 /* Assets.xcassets */; };
 		0D95152D2564650A00AE2C97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D95152B2564650A00AE2C97 /* LaunchScreen.storyboard */; };
+		7B9D48EA262A8F0B00AC2F4F /* FeedViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D48E9262A8F0B00AC2F4F /* FeedViewTableViewController.swift */; };
+		7B9D48EE262A910200AC2F4F /* SafetyAspectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D48ED262A910200AC2F4F /* SafetyAspectCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0D9515292564650A00AE2C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D95152C2564650A00AE2C97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D95152E2564650A00AE2C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9D48E9262A8F0B00AC2F4F /* FeedViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewTableViewController.swift; sourceTree = "<group>"; };
+		7B9D48ED262A910200AC2F4F /* SafetyAspectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyAspectCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				0D9515222564650900AE2C97 /* SceneDelegate.swift */,
 				0D9515242564650900AE2C97 /* ViewController.swift */,
 				0D95152E2564650A00AE2C97 /* Info.plist */,
+				7B9D48E9262A8F0B00AC2F4F /* FeedViewTableViewController.swift */,
+				7B9D48ED262A910200AC2F4F /* SafetyAspectCell.swift */,
 				0D8BB3262569C7A10043B5C9 /* Controller */,
 				0D9515292564650A00AE2C97 /* Assets.xcassets */,
 				0D9515262564650900AE2C97 /* Main.storyboard */,
@@ -151,9 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B9D48EA262A8F0B00AC2F4F /* FeedViewTableViewController.swift in Sources */,
 				0D9515252564650900AE2C97 /* ViewController.swift in Sources */,
 				0D8BB32A2569D9FD0043B5C9 /* WeatherData.swift in Sources */,
 				0D9515212564650900AE2C97 /* AppDelegate.swift in Sources */,
+				7B9D48EE262A910200AC2F4F /* SafetyAspectCell.swift in Sources */,
 				0D8BB3282569C7E40043B5C9 /* WeatherReport.swift in Sources */,
 				0D9515232564650900AE2C97 /* SceneDelegate.swift in Sources */,
 			);
