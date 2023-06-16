@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Moto-Safe
 //
-//  Created by user186085 on 11/17/20.
+//  Created by gbarcenasjr on 11/17/20.
 //
 
 import UIKit

@@ -136,7 +136,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         let hourTime = hour[...endOfSentence1]
         
         let period = dateTimeString
-        let endOfSentence2 = period.firstIndex(of: "M")!
+        let endOfSentence2 = period.firstIndex(of: " ")!
         let beginingOfSentence = period.firstIndex(of: " ")!
         let periodTime = period[beginingOfSentence...endOfSentence2]
         
