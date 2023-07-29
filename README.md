@@ -3,7 +3,7 @@ First Personally Built App. The App will immediately tell the user the level saf
 
 ## Video Walkthrough
 
-Here's a walkthrough current build:
+Here's a walkthrough of the current build:
 
 <img src='http://g.recordit.co/GYrujPg4O0.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
@@ -12,4 +12,4 @@ Here's a walkthrough current build:
 As of now, there are a few bugs that needs to be fixed. For example, when entering a city's name, the user has to press the search button twice in order to update the UI.
 Another is that the time displayed on the Riding Aspects is based on the device's time, not based on the city's actual time.
 
-New updates will optimize the UI for readability across all supported iPhones and iPads.
+New updates will optimize the UI to be responsive across all supported iPhones and iPads and to improve the time to display the city's local time instead of the device's time.
